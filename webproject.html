@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_M1</title>
+
+    <script>
+        let userLogin = localStorage.getItem("userLogin")
+        if (userLogin) {
+            <a href="project.html"></a>  
+        } 
+    </script>
+</head>
+
+<body>
+   Admin Page <p>Hello: <i class="userNameLogin"></i></p>
+   <button onclick="localStorage.removeItem(`userLogin`);window.location.href=`/project.html`;">Logout</button>
+   <script>
+    let user = JSON.parse(localStorage.getItem("userLogin")) ;
+    document.querySelector("userNameLogin").innerText = user.userName;
+   </script>
+</body> 
+
+</html>

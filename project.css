@@ -1,0 +1,63 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.Website {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.Website form {
+    border:1px solid #dadce0;
+    border-radius:5px;
+    padding:200px;
+}
+h1{
+    text-align: center;
+    font-size: 65px;
+    font-weight: 500;
+}
+.input-first {
+margin-bottom: 15px;
+position: relative;
+}
+input,button{
+height: 50px;
+width: 300px;
+outline:none;
+border:1px solid #dadce0;
+padding:10px;
+border-radius: 5px;
+font-size:inherit;
+transition: all 0.3s ease-in-out;
+}
+.btn-login{background-color: #1a73e8;
+color: #fff;
+cursor:pointer;
+}
+.btn-login:hover{
+    opacity: 0.85;
+}
+label{
+    position:absolute;
+    padding:0px 5px;
+    left:5px;
+    top:50%;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.input-first input:focus{
+border:2px solid #1a73e8
+}
+.input-first input:focus+label,.input-first input:valid+label {
+top:0px;
+font-size: 10px;
+font-weight: 500;
+color:#1a73e8
+}
