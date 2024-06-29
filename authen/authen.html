@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-M1</title>
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="authen.css">
+    <script>
+        let userLogin = localStorage.getItem("userLogin")
+        if (!userLogin) {
+            window.location.href = "/authen"
+        } 
+    </script>
 </head>
 
 <body>
@@ -15,7 +21,7 @@
                 <h1>Login</h1>
             </div>
             <div class="input-first">
-                <input name="userName" placeholder="userName"required>
+                <input name="userName" placeholder="userName" required>
                 <label for="">userName</label>
             </div>
             <div class="input-first">
@@ -23,10 +29,9 @@
             <label for="">userPassword</label>
             </div>
             <button type="submit" value="Login" class="btn-login">Login</button>
-            <a href="signup.html" class="login-link">Sign Up</a>
         </form>
     </div>
-    <script src="project.js"></script>
+    <script src="authen.js"></script>
 </body>
 
 </html>

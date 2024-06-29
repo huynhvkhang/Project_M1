@@ -1,3 +1,4 @@
+
 * {
     padding: 0px;
     margin: 0px;
@@ -6,10 +7,15 @@
 }
 
 .Website {
-    height: 700px;
+    height: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items:center;
+    background-image: url(https://phongvu.vn/cong-nghe/wp-content/uploads/2020/11/119234579_169457918065236_755533166268046471_n-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .Website form {
     border:1px solid #dadce0;
@@ -40,7 +46,7 @@ color: #fff;
 cursor:pointer;
 }
 .btn-login:hover{
-    opacity: 0.85;
+    opacity:8;
 }
 label{
     position:absolute;

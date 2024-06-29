@@ -3,10 +3,17 @@ let  userList = [
     {
         userName: "admin",
         password: "123",
+        productName:"apple",
+        id:Date.now(),
+        status: true
     },
     {
         userName: "menber",
         password: "1234",
+        productName:"apple",
+        id:Date.now(),
+        status: true
+
     }
 ]
 localStorage.setItem("userList",JSON.stringify(userList))
@@ -23,17 +30,17 @@ function login(event) {
             }   
         }
         if(!userExit){
-            alert("user not found")
+            alert("Tài khoản không đúng")
             return;
         }
         if(userExit.password != password){
-            alert("password incorrect")
+            alert("Mật khẩu không đúng")
             return;
         }
-        alert("login successfully ")
+        alert("Bạn đã đăng nhập thành công ")
        
         localStorage.setItem("userLogin",JSON.stringify(userExit))
-        window.location.href = "/webproject.html"
+        window.location.href = "/"
     }
     
 
