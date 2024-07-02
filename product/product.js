@@ -1,23 +1,4 @@
-let  userList = [
-    {
-        userName: "admin",
-        password: "123",
-        productName:"apple",
-        id:Date.now(),
-        codeproduct:"s212",
-        status: true
-    },
-    {
-        userName: "menber",
-        password: "1234",
-        productName:"apple",
-        id:Date.now(),
-        codeproduct:"s212",
-        status: true
 
-    }
-]
-localStorage.setItem("userList",JSON.stringify(userList))
 let userLogin = JSON.parse(localStorage.getItem("userLogin"));
 
 function logout() {

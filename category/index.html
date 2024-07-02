@@ -26,13 +26,10 @@
             <div class="menu_bar">
                 <ul>
                     <li>
-                        <button onclick="window.location.href='/'" class="btn btn-primary">Trở về trang chủ</button>
-                    </li>
-                    <li>
                         <button onclick="window.location.href='/used'" class="btn btn-primary">Quản lí người dùng</button>
                     </li>
                     <li>
-                        <button  onclick="window.location.href='/category'" class="btn btn-primary">Quản lí phân loại</button>
+                        <button  onclick="window.location.href='/category'" class="btn btn-primary">Quản lí danh mục</button>
                     </li>
                     <li>
                         <button onclick="window.location.href='/product'" class="btn btn-primary">Quản lí sản phẩm</button>
@@ -41,23 +38,25 @@
                 </ul>
             </div>
             <div class="content_box">
-                <h2>Quản lí phân loại</h2>
-                <button class="btn btn-success" onclick="addUser()">Thêm sản phẩm</button>
+                <h2>Quản lí danh mục</h2>
+                <button class="btn btn-success" onclick="addCategory()">Thêm sản phẩm</button>
                 <label for="search"></label>
                 <input type="text" id="search" placeholder="Tìm kiếm sản phẩm" oninput="searchList()">
                 <table class="table">
                     <thead>
                       <tr>
                         <th scope="col">STT</th>
-                        <th scope="col">Mã sản phẩm</th>
                         <th scope="col">Tên sản phẩm</th>
-                        <th scope="col">Tình trang</th>
-                        <th scope="col">Tools</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Giá tiền</th>
                         <th scope="col">Sữa</th>
                       </tr>
                     </thead>
-                    <tbody id="user_box">
-                       
+                    <tbody id="category_box">
+                   </tbody>
+                 </table>
+                 <div class="page_box">
+                 </div>  
                 
                     </tbody>
                   </table>

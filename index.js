@@ -1,12 +1,4 @@
-// let userList = [
-//     {
-//         id: "2323",
-//         userName: "admin",
-//         password: "123",
-//         status: true
-//     },
-// ]
-// localStorage.setItem("userList", JSON.stringify(userList))
+
 
 let userLogin = JSON.parse(localStorage.getItem("userLogin"));
 
